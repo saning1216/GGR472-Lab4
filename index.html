@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GGR472 Lab 4</title>
+    <title>GGR472 Lab 4 Toronto Collision Counts</title>
     <!-- mapbox API -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
@@ -19,6 +19,15 @@
 
     <!-- MAP CONTAINER -->
     <div id='map' class='map'></div>
+    <div id="nav-tools" class="nav-container"></div>
+    <div id="zoom-tools" class="zoom-container"></div>
+
+   
+    <!--Add a layer control to display collision points -->
+    <div id="layer-control">
+        <input type="checkbox" id="toggle-collisions"> <!--make the checkbox "unchecked" by default so the collision points won't be shown at first"-->
+        <label for="toggle-collisions">Display Collision Points</label>
+    </div>
 
     <script src="script.js"></script>
 
